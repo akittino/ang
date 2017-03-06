@@ -1,0 +1,20 @@
+CREATE TABLE question (
+id INT(10) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+phrase VARCHAR(255) NOT NULL,
+answer VARCHAR(255) NOT NULL,
+type VARCHAR(255) NOT NULL
+) DEFAULT CHARSET=utf8;
+
+INSERT INTO question
+    (phrase, answer, type)
+VALUES
+    ("raffle", "loteria", "rzeczownik"),
+    ("hospitality", "gościnność", "rzeczownik"),
+    ("clunky", "przylegający", "przymiotnik"),
+    ("acumen", "bystrość", "rzeczownik"),
+    ("commission", "komisja", "rzeczownik"),
+    ("virtue", "cnota", "rzeczownik"),
+    ("stitch", "szew", "rzeczownik"),
+    ("retaliation", "odwet", "rzeczownik"),
+    ("farewell", "pożegnanie", "rzeczownik"),
+    ("sentinel", "strażnik", "rzeczownik");
